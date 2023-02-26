@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo '[INFO] Cloning Repository'
                 sh 'git clone --depth 1 --single-branch https://github.com/cortezrc6/jenkins.git'
-                sh 'ls cortezrc6'
+              sh 'ls cortezrc6'
             }
         }
         stage('Provision AWS Instance') {
