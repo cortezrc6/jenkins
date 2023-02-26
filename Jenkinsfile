@@ -12,7 +12,7 @@ pipeline {
         stage('Provision AWS Instance') {
             steps {
                 echo '[INFO] Deploying to AWS'
-                sh 'scp -r mywebsite ec2-user@52.37.229.58:/var/www/html'
+                sh 'scp -r mywebsite ec2-user@ec2-52-37-229-58.us-west-2.compute.amazonaws.com:/var/www/html'
             }
         }
         stage('Deploy') {
